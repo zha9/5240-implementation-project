@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.passvault.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/login_success"
+            app:destination="@id/vaultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/vaultFragment"
+        android:name="com.example.passvault.VaultFragment"
+        android:label="VaultFragment"
+        tools:layout="@layout/fragment_vault">
+        <action
+            android:id="@+id/show_item"
+            app:destination="@id/vaultDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/vaultDetailFragment"
+        android:name="com.example.passvault.VaultDetailFragment"
+        android:label="VaultDetailFragment"
+        tools:layout="@layout/fragment_detail_vault">
+        <argument
+            android:name="itemId"
+            app:argType="java.util.UUID" />
+    </fragment>
+
+</navigation>

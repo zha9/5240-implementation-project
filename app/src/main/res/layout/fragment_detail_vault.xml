@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        android:text="@string/title" />
+
+    <EditText
+        android:id="@+id/item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:hint="@string/title_hint" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        android:text="@string/user_name" />
+
+    <EditText
+        android:id="@+id/item_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:hint="@string/username_hint" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        android:text="@string/password" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/item_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:hint="@string/password_hint" />
+
+        <ImageButton
+            android:id="@+id/visibility_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/baseline_visibility_off_24"
+            android:layout_marginEnd="8dp" />
+
+        <ImageButton
+            android:id="@+id/copy_password"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_content_copy_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginEnd="8dp" />
+
+        <ImageButton
+            android:id="@+id/check_password"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_security_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginEnd="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/share_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/baseline_mail_outline_24"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:text="@string/note" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/item_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:hint="@string/note_hint" />
+
+</LinearLayout>

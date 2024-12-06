@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PassVault</string>
+    <string name="log_in">Log in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="new_item">New Item</string>
+    <string name="delete_item">Delete Item</string>
+    <string name="user_name">Username</string>
+    <string name="title_hint">Enter title</string>
+    <string name="title">Title</string>
+    <string name="username_hint">Enter username</string>
+    <string name="password">Password</string>
+    <string name="password_hint">Enter Password</string>
+    <string name="note">Note</string>
+    <string name="note_hint">Enter note</string>
+</resources>
